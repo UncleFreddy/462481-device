@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+  	<header class="main-header">
+      <a href="index.html" class="index-logo">device</a>
+      <nav class="index-main-navigation">
+        <form action="https://echo.htmlacademy.ru" class="header-form">
+          <button type="button" class="header-form__button"></button>
+          <input type="text" class="header-form-input" placeholder="Поиск по сайту">
+        </form>        
+        <ul class="login-list">
+
+          <li class="login-item">
+            <a href="#" class="login-link">Валентин Петухов</a>
+          </li>
+          <li class="login-item">
+            <a href="#" class="login-link">Выйти  </a>
+          </li>
+        </ul>
+        <ul class="top-list">
+
+          <li class="top-item">
+            <a href="#" class="top-link compare">Сравнить</a>
+          </li>
+
+          <li class="top-item">
+            <a href="#" class="top-link cart">Корзина</a>
+          </li>
+        </ul>
+        <ul class="header-catalog__list">
+          <li class="header-catalog__item"></li>
+          <li class="header-catalog__item">
+            <ul class="header-dropdown-list">
+
+              <li class="header-dropdown__list">
+                <a href="virtual.html" class="header-dropdown__link header-virtual">Виртуальная реальность</a>
+              </li>
+
+              <li class="header-dropdown__list">
+                <a href="fitnes.html" class="header-dropdown__link header-fitnes">Фитнес-браслеты</a>
+              </li>
+
+              <li class="header-dropdown__list">
+                <a href="quadcopter.html" class="header-dropdown__link header-quadcopter">квадракоптеры</a>
+              </li>
+
+              <li class="header-dropdown__list">
+                <a href="stick.html" class="header-dropdown__link header-stick">Моноподы</a>
+              </li>
+
+              <li class="header-dropdown__list">
+                <a href="watch.html" class="header-dropdown__link header-watch">Умные часы</a>
+              </li>
+
+              <li class="header-dropdown__list">
+                <a href="camera.html" class="header-dropdown__link header-camera">Экшн-камеры</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <a href="catalog.html" class="header-catalog">Каталог товаров</a> 
+        <ul class="bottom-list">
+
+          <li class="bottom-item">
+            <a href="#" class="bottom-link delivery">доставка</a>
+          </li>
+
+          <li class="bottom-item">
+            <a href="#" class="bottom-link safe">гарантия</a>
+          </li>
+
+          <li class="bottom-item">
+            <a href="#" class="bottom-link contacts">контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="catalog-main">
+      <h1 class="visually-hidden">Каталог товаров</h1>
+      <nav class="pagenav">
+        <h2 class="pagenav__title">Моноподы для селфи</h2>
+        <ul class="breadcrumbs-list">
+
+          <li class="breadcrumbs-item">
+            <a href="index.html" class="breadcrumbs-link">Главная</a>
+          </li>
+
+          <li class="breadcrumbs-item">
+            <a href="catalog.html" class="breadcrumbs-link">Каталог товаров</a>
+          </li>
+
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Монопод для селфи</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="sidebar">
+        <p class="sidebar__filter"></p>
+        <p class="sidebar__coast"></p>
+        <form action="https://echo.htmlacademy.ru" class="sidebar__form">
+          <b class="sidebar__color">Цвет</b>
+          <p class="sidebar__color-text">
+            <input type="checkbox" name="color" id="black" class="sidebar__checkbox">
+            Черный
+          </p>
+          <p class="sidebar__color-text">
+            <input type="checkbox" name="color" id="white" class="sidebar__checkbox">
+            Белый
+          </p>          
+          <p class="sidebar__color-text">
+            <input type="checkbox" name="color" id="blue" class="sidebar__checkbox">
+            Синий
+          </p>
+          <p class="sidebar__color-text">
+            <input type="checkbox" name="color" id="red" class="sidebar__checkbox">
+            Красный
+          </p>
+          <p class="sidebar__color-text">
+            <input type="checkbox" name="color" id="pink" class="sidebar__checkbox">
+            Розовый
+          </p>
+          <b class="sidebar__bluetooth">Bluetooth</b>
+          <p class="sidebar__color-text">Есть
+            <input type="radio" class="sidebar__radio" id="yes" name="bluetooth">            
+          </p>
+          <p class="sidebar__color-text">Нет
+            <input type="radio" class="sidebar__radio" id="no" name="bluetooth">            
+          </p>
+
+          <button class="sidebar__button button" type="button">показать</button>
+        </form>
+      </section>
+      <section class="counter">
+        <h2 class="counter__title">Прилавок</h2>
+        <b class="counter__sorting">сортировка</b>
+        <ul class="counter__sorting-list">
+
+          <li class="counter__sorting-item">
+            <a href="#" class="counter__sorting-link">По цене</a>
+          </li>
+
+          <li class="counter__sorting-item">
+            <a href="#" class="counter__sorting-link">По типу</a>
+          </li>
+
+          <li class="counter__sorting-item">
+            <a href="#" class="counter__sorting-link">По популярности</a>
+          </li>
+        </ul>
+        <ul class="product__list">
+          <li class="product__item">
+            <a href="#" class="product__link">
+              <span class="product__img-wrapper">
+                <img src="img/item-1" alt="Любительская селфи-палка" class="product__img" width="360px" height="380px">
+              </span>
+              <h3 class="product__title">Любительская селфи-палка</h3>
+              <p class="product__coast">500 руб.</p>
+            </a>
+          </li>
+          <li class="product__item">
+            <a href="#" class="product__link">
+              <span class="product__img-wrapper">
+                <img src="img/item-2" alt="Профессиональная селфи-палка" class="product__img" width="360px" height="380px">
+              </span>
+              <h3 class="product__title">Профессиональная селфи-палка</h3>
+              <p class="product__coast">1500 руб.</p>
+            </a>
+          </li>
+          <li class="product__item">
+            <a href="#" class="product__link">
+              <span class="product__img-wrapper">
+                <img src="img/item-3" alt="Непотопляемая селфи-палка" class="product__img" width="360px" height="380px">
+              </span>
+              <h3 class="product__title">Непотопляемая селфи-палка</h3>
+              <p class="product__coast">2500 руб.</p>
+            </a>
+          </li>
+          <li class="product__item">
+            <a href="#" class="product__link">
+              <span class="product__img-wrapper">
+                <img src="img/item-4" alt="Селфи-палка'Следуй за мной'" class="product__img" width="360px" height="380px">
+              </span>
+              <h3 class="product__title">Селфи-палка'Следуй за мной'</h3>
+              <p class="product__coast">4900 руб.</p>
+            </a>
+          </li>
+        </ul>
+        <nav class="counter-nav">
+          <ul class="counter-nav__list">
+
+            <li class="counter-nav__item">
+              <a href="#" class="counter-nav__link">назад</a>
+            </li>
+
+            <li class="counter-nav__item">
+              <a href="#" class="counter-nav__link">1</a>
+            </li>
+
+            <li class="counter-nav__item">
+              <a href="#" class="counter-nav__link">2</a>
+            </li>
+
+            <li class="counter-nav__item">
+              <a href="#" class="counter-nav__link">3</a>
+            </li>
+
+            <li class="counter-nav__item">
+              <a href="#" class="counter-nav__link">вперед</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      
+    </main>
+    <footer class="main-footer">
+      <a href="" class="footer__logo">DEVICE</a>
+      <nav class="footer__nav-top">
+        <ul class="footer__nav-top--list">
+          <li class="footer__nav-top--item">
+            <a href="#" class="footer__nav-top--link footer__signin">Войти</a>
+          </li>
+
+          <li class="footer__nav-top--item">
+            <a href="#" class="footer__nav-top--link footer__compare">Сравнить</a>
+          </li>
+
+          <li class="footer__nav-top--item">
+            <a href="#" class="footer__nav-top--link footer__cart">Корзина</a>
+          </li>          
+        </ul>
+      </nav>
+      <p class="footer__adress">г. Москва, ул. Строителей, 15</p>
+      <nav class="footer__nav-bottom">
+        <ul class="footer__nav-bottom-list">
+
+          <li class="footer__nav-bottom-item">
+            <a href="#" class="footer__nav-bottom-link footer__delivery">доставка</a>
+          </li>
+
+          <li class="footer__nav-bottom-item">
+            <a href="#" class="footer__nav-bottom-link footer__safe">гарантия</a>
+          </li>
+
+          <li class="footer__nav-bottom-item">
+            <a href="#" class="footer__nav-bottom-link footer__contacts">контакты</a>
+          </li>
+        </ul>
+        <a href="№" class="footer__telephone">Тел.: +7 (495)-95-95</a>
+        <ul class="footer__social">
+
+          <li class="footer__item">
+            <a href="#" class="footer__link footer__fb"></a>
+          </li>
+
+          <li class="footer__item">
+            <a href="#" class="footer__link footer__instagram"></a>
+          </li>
+
+          <li class="footer__item">
+            <a href="#" class="footer__link footer__twitter"></a>
+          </li>
+        </ul>
+        <div class="html-academy">
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="html-academy-link">
+            <img src="img/logo-html.png" alt="" class="html-academy-logo">            
+          </a>
+        </div>
+      </nav>
+    </footer>
+  </body>
+</html>
