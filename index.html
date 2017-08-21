@@ -12,14 +12,14 @@
         <div class="main_header__top">
           <div class="main_header__form_wrapper">
             <form class="main_header__form" action="https://echo.htmlacademy.ru" method="get">
-              <input type="text" class="main_header__input vissualy-hidden" name="searh" placeholder="Поиск по сайту">                
-              <a href="#" class="main_header__link-find hidden ">Найти</a>
+              <input type="search" class="main_header__input" name="search" placeholder="Поиск по сайту">                
+              <a href="#" class="main_header__link-find hidden">Найти</a>
             </form>
           </div>
           <div class="main_header__top_right">
             <div class="main_header__login_wrapper">
-              <a href="#" class="main_header__login_link">
-                <span class="main_header__login_icon">
+              <a href="#" class="main_header_link">
+                <span class="main_header_icon">
                   <svg class="main_header__top_icon" x="0px" y="0px" width="13px" height="12px" viewBox="0 0 13 12"><path fill="#272525" d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z"/></svg>
                 </span>
                 Войти
@@ -27,16 +27,16 @@
             </div>
             <div class="main_header__right_wrapper">
               <div class="main_header__right-inner">
-                <a href="#" class="main_header__compare_link">
-                  <span class="main_header__compare_icon">
+                <a href="#" class="main_header_link">
+                  <span class="main_header_icon">
                     <svg class="main_header__top_icon" x="0px" y="0px" width="10px" height="10px" viewBox="0 0 10 10"><rect x="8" y="2" width="1.984" height="8"/><rect y="3" width="1.984" height="7"/><rect x="4" width="2" height="10"/></svg>
                   </span>
                   Сравнить
                 </a>                
               </div>
               <div class="main_header__right-inner">
-                <a href="#" class="main_header__cart_link">
-                  <span class="main_header__cart_icon">
+                <a href="#" class="main_header_link">
+                  <span class="main_header_icon">
                     <svg class="main_header__top_icon" x="0px" y="0px" width="12px" height="12px" viewBox="0 0 12 12"><g><path d="M11.864,3.017c-0.082-0.098-0.203-0.154-0.327-0.154H9.225V4.09c0,0.563-0.484,1.022-1.08,1.022c-0.594,0-1.078-0.458-1.078-1.022V2.863H4.909V4.09c0,0.563-0.485,1.022-1.08,1.022c-0.595,0-1.078-0.458-1.078-1.022V2.863H0.438c-0.125,0-0.243,0.056-0.327,0.154C0.028,3.115-0.012,3.245,0.003,3.375l0.776,7.134c0.015,0.806,0.642,1.455,1.411,1.455h7.595c0.77,0,1.396-0.649,1.411-1.455l0.776-7.134C11.987,3.245,11.946,3.115,11.864,3.017z"/><path d="M3.829,4.499c0.239,0,0.433-0.184,0.433-0.409V1.84c0-0.632,0.672-1.022,1.295-1.022h1.079c0.655,0,1.078,0.401,1.078,1.022v2.25c0,0.225,0.194,0.409,0.431,0.409c0.239,0,0.433-0.184,0.433-0.409V1.84C8.577,0.773,7.761,0,6.636,0H5.557C4.367,0,3.398,0.826,3.398,1.84v2.25C3.398,4.315,3.592,4.499,3.829,4.499z"/></g></svg>
                   </span>
                   Корзина
@@ -47,7 +47,32 @@
         </div>
           <nav class="main_menu">
             <div class="main_menu__wrapper">
-              <a href="#" class="main_menu__catalog">Каталог товаров</a>
+              <div class="main_menu__left_wrapper">                
+                <label class="main_menu__link main_menu__label_catalog" for="katalog">Каталог товаров</label>
+                <input type="checkbox" id="katalog" class="main_menu__input_catalog hidden">                
+                <div class="main_header__drop_list_wrapper hidden">
+                  <ul class="main_header__drop_list">
+                    <li class="main_header__drop_item">
+                      <a href="#" class="main_header__drop_link">Виртуальная реальность</a>
+                    </li>
+                    <li class="main_header__drop_item">
+                      <a href="#" class="main_header__drop_link">Фитнес-браслеты</a>
+                    </li>
+                    <li class="main_header__drop_item">
+                      <a href="#" class="main_header__drop_link">Квадрокоптеры</a>
+                    </li>
+                    <li class="main_header__drop_item">
+                      <a href="#" class="main_header__drop_link">Моноподы для селфи</a>
+                    </li>
+                    <li class="main_header__drop_item">
+                      <a href="#" class="main_header__drop_link">Умные часы</a>
+                    </li>
+                    <li class="main_header__drop_item">
+                      <a href="#" class="main_header__drop_link">Экшн-камеры</a>
+                    </li>
+                  </ul>
+                </div>  
+              </div>
               <div class="main_menu__right-wrapper">
                 <div class="main_menu__right-left">
                   <a href="#" class="main_menu__link">Доставка</a>
@@ -55,28 +80,6 @@
                 </div>
                   <a href="#" class="main_menu__link">Контакты</a>
               </div>
-              <div class="main_header__drop_list_wrapper">
-                <ul class="main_header__drop_list">
-                  <li class="main_header__drop_item">
-                    <a href="#" class="main_header__drop_link">Виртуальная реальность</a>
-                  </li>
-                  <li class="main_header__drop_item">
-                    <a href="#" class="main_header__drop_link">Фитнес-браслеты</a>
-                  </li>
-                  <li class="main_header__drop_item">
-                    <a href="#" class="main_header__drop_link">Квадрокоптеры</a>
-                  </li>
-                  <li class="main_header__drop_item">
-                    <a href="#" class="main_header__drop_link">Моноподы для селфи</a>
-                  </li>
-                  <li class="main_header__drop_item">
-                    <a href="#" class="main_header__drop_link">Умные часы</a>
-                  </li>
-                  <li class="main_header__drop_item">
-                    <a href="#" class="main_header__drop_link">Экшн-камеры</a>
-                  </li>
-                </ul>
-              </div>  
             </div>                
           </nav>
       </div>
@@ -212,9 +215,9 @@
       <section class="tabs">
         <div class="tabs__wrapper">
           <div class="tabs__buttons">
-            <a href="#" class="tabs__button button">Доставка</a>
-            <a href="#" class="tabs__button button">Гарантия</a>
-            <a href="#" class="tabs__button button">Кредит</a>
+            <button type="button" class="tabs__button button">Доставка</button>
+            <button type="button" class="tabs__button button">Гарантия</button>
+            <button type="button" class="tabs__button button">Кредит</button>
           </div>
           <div class="tabs-content">
             <div class="tabs-content__wrapper">
@@ -286,7 +289,7 @@
         <a href="" class="contacts__link">
           <img src="img/map.jpg" alt="Карта" class="contacts__img">
         </a>
-        <a href="#" class="about-us__write-us">напишите нам</a>
+        <button type="button" class="about-us__write-us button">напишите нам</button>
       </section>
     </main>
     <footer class="main-footer">
@@ -321,13 +324,13 @@
           </ul>
         </div>
         <div class="footer-middel">
-          <p class="footer-middle__adress">г. Москва, ул. Строителей, 15</p>
+          <adress class="footer-middle__adress">г. Москва, ул. Строителей, 15</adress>
           <div class="footer-middle__menu">
             <a href="" class="footer-middle__link">Доставка</a>
             <a href="" class="footer-middle__link">Гарантия</a>
             <a href="" class="footer-middle__link">Контакты</a>
           </div>
-          <p class="footer-middle__tel">Тел.: +7 (495) 495-95-95</p>
+          <adress class="footer-middle__tel">Тел.: +7 (495) 495-95-95</adress>
         </div>
         <div class="footer-bottom">
           <span class="footer-bottom-line"></span>
@@ -351,16 +354,16 @@
     <section class="modal-write modal">
       <h2 class="modal-hidden">Написать нам</h2>
       <div class="modal-write__wrapper">
-        <span class="modal__close">
+        <button type="button" class="modal__close">
           <svg class="modal__close__svg" x="0px" y="0px" width="55px" height="55px" viewBox="0 0 55 55"><path  class="modal__close__background" d="M27.5,0C12.312,0,0,12.312,0,27.5C0,42.688,12.312,55,27.5,55C42.688,55,55,42.688,55,27.5C55,12.312,42.688,0,27.5,0z M38.976,37.072l-1.486,1.426L27.5,28.924l-9.987,9.574l-1.488-1.426l9.988-9.573l-9.987-9.573l1.487-1.425l9.987,9.573l9.988-9.573l1.487,1.425L28.986,27.5L38.976,37.072z"/></svg>
-        </span>
+        </button>
         <form action="https://echo.htmlacademy.ru" class="modal-write__form" method="post">
           
           <label class="modal-write__label" for="modal-write__name">Ваше имя:</label>
-          <input class="modal-write__input hidden" id="modal-write__name" type="text" name="modal-write__name" placeholder="Представьтесь, пожалуйста">
+          <input class="modal-write__input" id="modal-write__name" type="text" name="modal-write__name" placeholder="Представьтесь, пожалуйста">
           
           <label class="modal-write__label" for="modal-write__email">Ваш e-mail:</label>
-          <input class="modal-write__input hidden" id="modal-write__email" type="email" name="modal-write__name" placeholder="Для отправки ответа">
+          <input class="modal-write__input" id="modal-write__email" type="email" name="modal-write__name" placeholder="Для отправки ответа">
           
           <label class="modal-write__label" for="modal-write__text">Текст письма:</label>
           <textarea class="modal-write__textarea" id="modal-write__text" name="modal-write__name" cols="30" rows="10" placeholder="В свободной форме"></textarea>
@@ -371,9 +374,9 @@
     <section class="modal-map">
       <h2 class="modal-hidden">Карта</h2>
       <div class="modal-map__wrapper">
-        <span class="modal__close">
+        <button type="button" class="modal__close">
           <svg class="modal__close__svg" x="0px" y="0px" width="55px" height="55px" viewBox="0 0 55 55"><path  class="modal__close__background" d="M27.5,0C12.312,0,0,12.312,0,27.5C0,42.688,12.312,55,27.5,55C42.688,55,55,42.688,55,27.5C55,12.312,42.688,0,27.5,0z M38.976,37.072l-1.486,1.426L27.5,28.924l-9.987,9.574l-1.488-1.426l9.988-9.573l-9.987-9.573l1.487-1.425l9.987,9.573l9.988-9.573l1.487,1.425L28.986,27.5L38.976,37.072z"/></svg>
-        </span>
+        </button>
       </div>
     </section>
   </body>
