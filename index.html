@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/borers.css">
   </head>
   <body>
     <header class="main_header">
@@ -30,7 +31,7 @@
               </a>
             </div>
             <div class="main_header__right_wrapper">
-              <div class="main_header__right-inner">
+              <div class="main_header__right_inner">
                 <a href="#" class="main_header_link">
                   <span class="main_header_icon">
                     <svg class="main_header__top_icon" x="0px" y="0px" width="10px" height="10px" viewBox="0 0 10 10"><rect x="8" y="2" width="1.984" height="8"/><rect y="3" width="1.984" height="7"/><rect x="4" width="2" height="10"/></svg>
@@ -38,7 +39,7 @@
                   Сравнить
                 </a>                
               </div>
-              <div class="main_header__right-inner">
+              <div class="main_header__right_inner">
                 <a href="#" class="main_header_link">
                   <span class="main_header_icon">
                     <svg class="main_header__top_icon" x="0px" y="0px" width="12px" height="12px" viewBox="0 0 12 12"><g><path d="M11.864,3.017c-0.082-0.098-0.203-0.154-0.327-0.154H9.225V4.09c0,0.563-0.484,1.022-1.08,1.022c-0.594,0-1.078-0.458-1.078-1.022V2.863H4.909V4.09c0,0.563-0.485,1.022-1.08,1.022c-0.595,0-1.078-0.458-1.078-1.022V2.863H0.438c-0.125,0-0.243,0.056-0.327,0.154C0.028,3.115-0.012,3.245,0.003,3.375l0.776,7.134c0.015,0.806,0.642,1.455,1.411,1.455h7.595c0.77,0,1.396-0.649,1.411-1.455l0.776-7.134C11.987,3.245,11.946,3.115,11.864,3.017z"/><path d="M3.829,4.499c0.239,0,0.433-0.184,0.433-0.409V1.84c0-0.632,0.672-1.022,1.295-1.022h1.079c0.655,0,1.078,0.401,1.078,1.022v2.25c0,0.225,0.194,0.409,0.431,0.409c0.239,0,0.433-0.184,0.433-0.409V1.84C8.577,0.773,7.761,0,6.636,0H5.557C4.367,0,3.398,0.826,3.398,1.84v2.25C3.398,4.315,3.592,4.499,3.829,4.499z"/></g></svg>
@@ -52,7 +53,7 @@
           <nav class="main_menu">
               <div class="main_menu__wrapper_left">
                 <label class="main_menu__link main_menu__label_catalog" for="katalog">Каталог товаров
-                  <svg  width="32" height="16" x="16px" viewBox="0 0 16 16"><path class="plus_svg" fill="#000" fill-opacity=".3" d="M16 7H9V0H7v7H0v2h7v7h2V9h7z"/></svg>                
+                  <svg  width="26" height="16" viewBox="0 0 16 16"><path class="plus_svg" fill="#000" fill-opacity=".3" d="M16 7H9V0H7v7H0v2h7v7h2V9h7z"/></svg>                
                 </label>
                 <input type="checkbox" id="katalog" class="main_menu__input_catalog hidden">
                 <div class="main_header__drop_list_wrapper hidden">
@@ -104,19 +105,21 @@
                 Самая длинная палка для селфи доступна в нашем магазине.<br>
                 Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
               </p>
-              <a href="" class="slider__button button">Подробнее</a>
-              <div class="slider__control-wrapper">
-                <button type="button" class="slider__control_1"></button>
-                <button type="button" class="slider__control_2"></button>
-                <button type="button" class="slider__control_3"></button>              
+              <div class="slider__control_wrapper">
+                <a href="#" class="slider__button button">Подробнее</a>
+                <button type="button" class="slider__control slider__control_1"></button>
+                <button type="button" class="slider__control slider__control_2"></button>
+                <button type="button" class="slider__control slider__control_3"></button>              
               </div>
-              <p class="slider__spec">8,5 м<span class="subspec">Длина палки</span></p>
-              <p class="slider__spec">5 кг<span class="subspec">Вес палки</span></p>
-              <p class="slider__spec">Карбон<span class="subspec">Материал</span></p>
+              <div class="slider__spec_wrapper">
+                <p class="slider__spec">8,5 м<span class="subspec">Длина палки</span></p>
+                <p class="slider__spec">5 кг<span class="subspec">Вес палки</span></p>
+                <p class="slider__spec">Карбон<span class="subspec">Материал</span></p>                
+              </div>
             </div>
           </div>
           <div class="slider_wrapper slider_2__wrapper">
-            <figure class="slider__figure">
+            <figure class="slider_2_figure">
               <img src="img/slider-2.png" alt="Фитнесс-трекер" class="slider__img">
             </figure>
             <div class="slider__content">
@@ -129,41 +132,45 @@
                 Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
                 не пропускать занятия и соблюдать диету.
               </p>
+              <div class="slider__control_wrapper">
               <a href="" class="slider__button button">Подробнее</a>
-              <div class="slider__control-wrapper">
-                <button type="button" class="slider__control_1"></button>
-                <button type="button" class="slider__control_2"></button>
-                <button type="button" class="slider__control_3"></button>             
+                <button type="button" class="slider__control slider__control_1"></button>
+                <button type="button" class="slider__control slider__control_2"></button>
+                <button type="button" class="slider__control slider__control_3"></button>             
               </div>
-              <p class="slider__spec">48 часов<span class="subspec">Без подзарядки</span></p>
+              <div class="slider__spec_wrapper">
+                <p class="slider__spec">48 часов<span class="subspec">Без подзарядки</span></p>
+              </div>
             </div>
           </div>
           <div class="slider_wrapper slider_3__wrapper">
-            <figure class="slider__figure">
+            <figure class="slider_3_figure">
               <img src="img/slider-3.png" alt="Квадрокоптер" class="slider__img">
             </figure>
             <div class="slider__content">
-              <p class="slider__number">03</p>
-              <h2 class="slider__title">
+              <p class="slider__number slider__number_3">03</p>
+              <h2 class="slider__title slider__title_3">
                 Порхает как бабочка,<br>
                 жалит как пчела!
               </h2>
-              <p class="slider__text">
+              <p class="slider__text slider__text_3">
                 Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
                 мощным лазером, замаскированным под стандартную камеру.
               </p>
-              <a href="" class="slider__button button">Подробнее</a>
-              <div class="slider__control-wrapper">
-                <button type="button" class="slider__control_1"></button>
-                <button type="button" class="slider__control_2"></button>
-                <button type="button" class="slider__control_3"></button>
+              <div class="slider__control_wrapper slider__control_wrapper_3">
+                <a href="" class="slider__button button">Подробнее</a>
+                <button type="button" class="slider__control slider__control_1"></button>
+                <button type="button" class="slider__control slider__control_2"></button>
+                <button type="button" class="slider__control slider__control_3"></button>
               </div>
-              <p class="slider__spec">800 м<span class="subspec">Дальность полета</span></p>
-              <p class="slider__spec">50 м<span class="subspec">Радиус поражения</span></p>
+              <div class="slider__spec_wrapper slider__spec_wrapper_3">
+                <p class="slider__spec">800 м<span class="subspec">Дальность полета</span></p>
+                <p class="slider__spec">50 м<span class="subspec">Радиус поражения</span></p>
+              </div>
             </div>
           </div>
       </section>
-      <section class="main-catalog">
+      <section class="main_catalog">
         <h2 class="hidden">Каталог</h2>
         <ul class="main_catalog__list">
           <li class="main_catalog__item">
@@ -172,57 +179,72 @@
                 <img src="img/popular-1.svg" alt="Виртуальная реальность" width="97" height="55">
               </span>
             </a>
-              <a href="#" class="main_catalog_names">Виртуальная реальность</a>
+          </li>
+          <li class="main_catalog__item">
+            <a href="#" class="main_catalog__link main_catalog__virtual">
+              <span class="main_catalog__span main_catalog__span_2">
+                <img src="img/popular-2.svg" alt="Моноподы для селфи"">
+              </span>
+            </a>
           </li>
           <li class="main_catalog__item">
             <a href="#" class="main_catalog__link main_catalog__virtual">
               <span class="main_catalog__span">
-                <img src="img/popular-2.svg" alt="Моноподы для селфи" width="97" height="55">
+                <img src="img/popular-3.svg" alt="Экшн-камеры">
               </span>
             </a>
-              <a href="#" class="main_catalog_names">Моноподы для селфи</a>
           </li>
           <li class="main_catalog__item">
             <a href="#" class="main_catalog__link main_catalog__virtual">
               <span class="main_catalog__span">
-                <img src="img/popular-3.svg" alt="Экшн-камеры" width="97" height="55">
+                <img src="img/popular-4.svg" alt=">Фитнес-браслеты">
               </span>
             </a>
-              <a href="#" class="main_catalog_names">Экшн-камеры<//a>
           </li>
           <li class="main_catalog__item">
             <a href="#" class="main_catalog__link main_catalog__virtual">
               <span class="main_catalog__span">
-                <img src="img/popular-4.svg" alt=">Фитнес-браслеты" width="97" height="55">
+                <img src="img/popular-5.svg" alt="Умные часы">
               </span>
             </a>
-              <a href="#" class="main_catalog_names">Фитнес-браслеты<//a>
           </li>
           <li class="main_catalog__item">
             <a href="#" class="main_catalog__link main_catalog__virtual">
               <span class="main_catalog__span">
-                <img src="img/popular-5.svg" alt="Умные часы" width="97" height="55">
+                <img src="img/poppular-6.svg" alt="Квадракоптеры">
               </span>
             </a>
-              <a href="#" class="main_catalog_names">Умные часы</a>
           </li>
-          <li class="main_catalog__item">
-            <a href="#" class="main_catalog__link main_catalog__virtual">
-              <span class="main_catalog__span">
-                <img src="img/poppular-6.svg" alt="Квадракоптеры" width="97" height="55">
-              </span>
-            </a>
-              <a href="#" class="main_catalog_names">Квадракоптеры<//a>
+        </ul>
+        <ul class="main_catalog_names_list">
+          <li class="main_catalog_names_item">
+            <a href="#" class="main_catalog_names">Виртуальная<br> реальность</a>
+          </li>
+          <li class="main_catalog_names_item">
+            <a href="#" class="main_catalog_names">Моноподы<br> для селфи</a>
+          </li>
+          <li class="main_catalog_names_item">
+            <a href="#" class="main_catalog_names">Экшн-камеры</a>
+          </li>
+          <li class="main_catalog_names_item">
+            <a href="#" class="main_catalog_names">Фитнес-браслеты</a>
+          </li>
+          <li class="main_catalog_names_item">
+            <a href="#" class="main_catalog_names">Умные часы</a>
+          </li>
+          <li class="main_catalog_names_item">
+            <a href="#" class="main_catalog_names">Квадракоптеры</a>
           </li>
         </ul>
       </section>
       <section class="tabs">
         <div class="tabs__wrapper">
+          <div class="tabs__wrapper__inner">
           <div class="tabs__buttons">
-              <button type="button" class="tabs__button button">Доставка</button>
-              <button type="button" class="tabs__button button">Гарантия</button>
-              <button type="button" class="tabs__button button">Кредит</button>
-            </div>
+            <button type="button" class="tabs__button button">Доставка</button>
+            <button type="button" class="tabs__button button">Гарантия</button>
+            <button type="button" class="tabs__button button">Кредит</button>
+          </div>
             <div class="tabs_content">
               <div class="tabs_content__wrapper delivery">
                 <h2 class="tabs_content__tittle">Доставка</h2>
@@ -253,6 +275,7 @@
                 </p>
               </div>
             </div>
+          </div>
         </div>
       </section>
       <section class="partners">
@@ -288,13 +311,14 @@
           </li>
         </ul>
       </section>
+      <div class="about_us__contacts__wrapper">
       <section class="about_us">
         <h2 class="about_us__title">О нас</h2>
         <p class="about_us__text">
           Огромный выбор гаджетов не оставит равнодушным гика,<br>
           который есть в каждом из нас.
         </p>
-        <p class="about_us__text">
+        <p class="about_us__text about_us__text_bottom">
           Мы можем доставить ваш товар в самые отдаленные точки<br>
           России DEVICE работает со многими транспортными компаниями:
         </p>
@@ -303,7 +327,9 @@
           <li class="about_us__item">Автотрейдинг</li>
           <li class="about_us__item">ЖелДорЭкспедиция</li>
         </ul>
-        <a href="about-us.html" class="about-us__link button">подробнее о нас</a>
+        <div class="about_us__link_wrapper">
+          <a href="about-us.html" class="about_us__link button">подробнее о нас</a>
+        </div>
       </section>
       <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
@@ -311,18 +337,21 @@
         <a href="" class="contacts__link">
           <img src="img/map.jpg" alt="Карта" class="contacts__img" width="560" height="222">
         </a>
-        <button type="button" class="about-us__write-us button">напишите нам</button>
+        <div class="about_us__write_us_wrapper">
+          <button type="button" class="about_us__write_us button">напишите нам</button>
+        </div>
       </section>
+      </div>
     </main>
     <footer class="main_footer">
-      <div class="footer_weapper">
+      <div class="footer_wrapper">
         <div class="footer_top">
-          <svg class="logo_svg_footer" width="164" height="36" viewBox="0 0 164 36"><defs><style>.logo {font-size: 26.459px;font-family: Gilroy;font-weight: 800;}</style></defs><text id="logo" class="logo" transform="translate(-2.319 34.511) scale(1.827 1.814)">DEVICE</text></svg>
+          <svg class="logo_svg_footer" width="164" height="36" viewBox="0 0 164 36"><defs><style>.logo {font-size: 26.459px;font-family: Gilroy;font-weight: 800;}</style></defs><text class="logo" transform="translate(-2.319 34.511) scale(1.827 1.814)">DEVICE</text></svg>
           <ul class="footer_top_right_list">
             <li class="footer_top_right__item">
               <a href="#" class="footer_top_right__link">
                 <span class="footer_top_right__icon">
-                  <svg class="main_footer_icon" x="0px" y="0px" width="13px" height="12px" viewBox="0 0 13 12"><path d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z"/></svg>
+                  <svg class="main_footer_icon" x="0px" y="0px" width="16px" height="12px" viewBox="0 0 13 12"><path d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z"/></svg>
                 </span>
                 Войти
               </a>
@@ -346,13 +375,13 @@
           </ul>
         </div>
         <div class="footer_middel">
-          <adress class="footer_middle__adress">г. Москва, ул. Строителей, 15</adress>
-          <div class="footer-middle__menu">
-            <a href="" class="footer_middle__link">Доставка</a>
-            <a href="" class="footer_middle__link">Гарантия</a>
-            <a href="" class="footer_middle__link">Контакты</a>
+          <p class="footer_middle__adress">г. Москва, ул. Строителей, 15</p>
+          <div class="footer_middle__menu">
+            <a href="#" class="footer_middle__link">Доставка</a>
+            <a href="#" class="footer_middle__link">Гарантия</a>
+            <a href="#" class="footer_middle__link">Контакты</a>
           </div>
-          <adress class="footer_middle__adress">Тел.: +7 (495) 495-95-95</adress>
+          <p class="footer_middle__adress">Тел.: +7 (495) 495-95-95</p>
         </div>
         <div class="footer_bottom">
           <span class="footer_bottom_line"></span>
@@ -380,26 +409,31 @@
           <svg class="modal__close__svg" x="0px" y="0px" width="55px" height="55px" viewBox="0 0 55 55"><path  class="modal__close__background" d="M27.5,0C12.312,0,0,12.312,0,27.5C0,42.688,12.312,55,27.5,55C42.688,55,55,42.688,55,27.5C55,12.312,42.688,0,27.5,0z M38.976,37.072l-1.486,1.426L27.5,28.924l-9.987,9.574l-1.488-1.426l9.988-9.573l-9.987-9.573l1.487-1.425l9.987,9.573l9.988-9.573l1.487,1.425L28.986,27.5L38.976,37.072z"/></svg>
         </button>
         <form action="https://echo.htmlacademy.ru" class="modal_write__form" method="post">
-          
-          <label class="modal_write__label" for="modal-write__name">Ваше имя:</label>
-          <input class="modal_write__input" id="modal-write__name" type="text" name="modal_write__name" placeholder="Представьтесь, пожалуйста">
-          
-          <label class="modal_write__label" for="modal-write__email">Ваш e-mail:</label>
-          <input class="modal_write__input" id="modal-write__email" type="email" name="modal_write__name" placeholder="Для отправки ответа">
-          
-          <label class="modal_write__label" for="modal_write__text">Текст письма:</label>
-          <textarea class="modal_write__textarea" id="modal_write__text" name="modal_write__name" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-          <button class="modal_write__button button">Отправить</button>
+          <div class="modal_write__input_wrapper">
+            <div class="modal_write__input_wrapper_left">
+              <label class="modal_write__label" for="modal-write__name">Ваше имя:</label>
+              <input class="modal_write__input" id="modal-write__name" type="text" name="modal_write__name" placeholder="Представьтесь, пожалуйста">
+            </div>
+            <div class="modal_write__input_wrapper_right">
+              <label class="modal_write__label" for="modal-write__email">Ваш e-mail:</label>
+              <input class="modal_write__input" id="modal-write__email" type="email" name="modal_write__name" placeholder="Для отправки ответа">
+            </div>
+          </div>
+          <div class="modal_write__textarea_wrapper">
+            <label class="modal_write__label" for="modal_write__text">Текст письма:</label>
+            <textarea class="modal_write__textarea" id="modal_write__text" name="modal_write__name" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+          </div>
+          <div class="modal_write__button_wrapper">
+            <button class="modal_write__button button">Отправить</button>
+          </div>
         </form>
       </div>
     </section>
     <section class="modal_map">
       <h2 class="hidden">Карта</h2>
-      <div class="modal_map__wrapper">
-        <button type="button" class="modal__close">
+        <button type="button" class="modal__close_map">
           <svg class="modal__close__svg" x="0px" y="0px" width="55px" height="55px" viewBox="0 0 55 55"><path  class="modal__close__background" d="M27.5,0C12.312,0,0,12.312,0,27.5C0,42.688,12.312,55,27.5,55C42.688,55,55,42.688,55,27.5C55,12.312,42.688,0,27.5,0z M38.976,37.072l-1.486,1.426L27.5,28.924l-9.987,9.574l-1.488-1.426l9.988-9.573l-9.987-9.573l1.487-1.425l9.987,9.573l9.988-9.573l1.487,1.425L28.986,27.5L38.976,37.072z"/></svg>
         </button>
-      </div>
     </section>
   </body>
 </html>

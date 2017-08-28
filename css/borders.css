@@ -1,0 +1,221 @@
+*::before {
+	font-size: 12px;
+	line-height: 12px;
+}
+body {
+	box-shadow: 0 0 0 2px #ff7f00;
+	position: relative;
+}
+body::before {
+	position: absolute;
+	top: -12px;
+	right: 0;
+	content: 'Body';
+	background-color: #ff7f00;
+	padding: 2px;
+}
+header {
+	box-shadow: 0 0 0 2px #f0f;
+	position: relative;
+}
+header::before {
+	position: absolute;
+	top: -12px;
+	right: 0;
+	content: 'Header';
+	background-color: #f0f;
+	padding: 2px;
+}
+header > div {
+	box-shadow: 0 0 0 2px #0f0;
+	position: relative;
+}
+header > div::before {
+	position: absolute;
+	top: -12px;
+	right: 0;
+	content: 'Inner';
+	background-color: #0f0;
+	padding: 2px;
+}
+header > div > div {
+	box-shadow: 0 0 0 2px #0f0;
+	position: relative;
+}
+header > div > div::before {
+	position: absolute;
+	top: -12px;
+	right: 0;
+	content: 'Inner';
+	background-color: #0f0;
+	padding: 2px;
+}
+header > div > div > div {
+	box-shadow: 0 0 0 2px #0f0;
+	position: relative;
+}
+header > div > div > div::before {
+	position: absolute;
+	top: -12px;
+	right: 0;
+	content: 'Inner_inner';
+	background-color: #0f0;
+	padding: 2px;
+}
+main {
+	box-shadow: 0 0 0 2px #080078;
+	position: relative;
+}
+main::before {
+	position: absolute;
+	top: -12px;
+	right: 0;
+	content: 'Main';
+	background-color: #080078;
+	padding: 2px;
+}
+footer {
+	box-shadow: 0 0 0 2px #0f7207;
+	position: relative;
+}
+footer::before {
+	position: absolute;
+	top: -12px;
+	right: 0;
+	content: 'Footer';
+	background-color: #0f7207;
+	padding: 2px;
+}
+section {
+	box-shadow: 0 0 0 2px #f00;
+	position: relative;
+}
+section::before {
+	position: absolute;
+	top: -12px;
+	right: 0;
+	content: 'Section';
+	background-color: #f00;
+	padding: 2px;
+}
+body > div {
+	box-shadow: 0 0 0 2px #fffc00;
+	position: relative;
+}
+body > div::before {
+	position: absolute;
+	top: -12px;
+	right: 0;
+	content: 'Wrapper';
+	background-color: #fffc00;
+	padding: 2px;
+}
+section > div {
+	box-shadow: 0 0 0 2px #0f0;
+	position: relative;
+}
+section  div::before {
+	position: absolute;
+	top: -12px;
+	right: 0;
+	content: 'Inner';
+	background-color: #0f0;
+	padding: 2px;
+}
+section  div  div {
+	box-shadow: 0 0 0 2px #0f0;
+	position: relative;
+}
+section > div > div::before {
+	position: absolute;
+	top: -12px;
+	right: 0;
+	content: 'Inner';
+	background-color: #0f0;
+	padding: 2px;
+}
+section > div > div > div {
+	box-shadow: 0 0 0 2px #0f0;
+	position: relative;
+}
+section > div > div > div::before {
+	position: absolute;
+	top: -12px;
+	right: 0;
+	content: 'Inner';
+	background-color: #0f0;
+	padding: 2px;
+}
+ul {
+	box-shadow: 0 0 0 2px #00f;
+	position: relative;
+}
+ul::before {
+	position: absolute;
+	top: -12px;
+	right: 0;
+	content: 'List';
+	background-color: #00f;
+	padding: 2px;
+}
+li {
+	box-shadow: 0 0 0 2px #4d0095;
+	position: relative;
+}
+li:not(.about_us__item:before)::before {
+	position: absolute;
+	top: -12px;
+	right: 0;
+	content: 'List_item';
+	background-color: #4d0095;
+	padding: 2px;
+	color: #fff;
+}
+p {
+	box-shadow: 0 0 0 2px #0ff;
+	position: relative;
+}
+p::before {
+	position: absolute;
+	top: -12px;
+	right: 0;
+	content: 'Paragraph';
+	background-color: #0ff;
+	padding: 2px;
+}
+nav {
+	box-shadow: 0 0 0 2px #ff0;
+	position: relative;
+}
+nav::before {
+	position: absolute;
+	top: -12px;
+	right: 0;
+	content: 'Main_menu';
+	background-color: #ff0;
+	padding: 2px;
+}
+nav > div {
+	box-shadow: 0 0 0 2px #ff0;
+	position: relative;
+}
+nav > div::before {
+	position: absolute;
+	top: -12px;
+	right: 0;
+	content: 'Inner';
+	background-color: #ff0;
+	padding: 2px;
+}
+nav > div > div {
+	box-shadow: 0 0 0 2px #ff0;
+	position: relative;
+}
+nav > div > div::before {
+	position: absolute;
+	top: -12px;
+	right: 0;
+	content: 'Inner-ineer';
+	background-color: #ff0;
+	padding: 2px;
+}

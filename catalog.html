@@ -6,12 +6,13 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/borers.css">
   </head>
 
 
   <body class="catalog_body">
-  	<header class="main_header">
-      <div class="main_header__wrapper">
+  	<header class="main_header catalog_header">
+      <div class="main_header__wrapper catalog_header">
         <a href="#" class="logo-index">
           <svg class="logo_svg" width="164" height="36" viewBox="0 0 164 36"><defs><style>.logo {font-size: 26.459px;font-family: Gilroy;font-weight: 800;}</style></defs><text id="logo" class="logo" transform="translate(-2.319 34.511) scale(1.827 1.814)">DEVICE</text></svg>
         </a>
@@ -23,7 +24,7 @@
             </form>
           </div>
           <div class="main_header__top_right">
-            <div class="main_header__login_wrapper">
+            <div class="main_header__login_wrapper main_header__login_wrapper_catalog">
               <a href="#" class="main_header_link">
                 <span class="main_header_icon">
                   <svg class="main_header__top_icon" x="0px" y="0px" width="13px" height="12px" viewBox="0 0 13 12"><path fill="#272525" d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z"/></svg>
@@ -94,145 +95,173 @@
     <main class="catalog_main">
       <h1 class="catalog_title hidden">Каталог товаров</h1>
       <h2 class="item__title">Моноподы для селфи</h2>
-      <ul class="breadcrumbs_list">
-        <li class="breadcrumbs_item">
-          <a href="index.html" class="breadcrumbs_link">Главная</a>
-        </li>
-        <li class="breadcrumbs_item">
-          <a href="catalog.html" class="breadcrumbs_link">Каталог товаров</a>
-        </li>
-        <li class="breadcrumbs_item breadcrumbs_link">Монопод для селфи</li>
-      </ul>
+      <div class="breadcrumbs_wrapper">
+        <ul class="breadcrumbs_list">
+          <li class="breadcrumbs_item">
+            <a href="index.html" class="breadcrumbs_link">Главная</a>
+          </li>
+          <li class="breadcrumbs_item">
+            <a href="catalog.html" class="breadcrumbs_link">Каталог товаров</a>
+          </li>
+          <li class="breadcrumbs_item breadcrumbs_link">Монопод для селфи</li>
+        </ul>
+      </div>
       <section class="counter">
       <h2 class="counter__title hidden">Каталог</h2>
         <div class="counter__wrapper">
-          <div class="counter__filter">
-            <form class="counter__form" action="https://echo.htmlacademy.ru" method="get">
-              <fieldset class="counter__fieldset_top">
-                <legend class="filters_legend">Фильтр:</legend>
-              </fieldset>
-              <fieldset class="counter__fieldset_second">
-                <legend class="filters_legend">Стоимость</legend>
-              </fieldset>
-              <fieldset class="counter__fieldset_thrid">
-                <legend class="filters_legend">Цвет</legend>
-
-                <input class="counter__input_checkbox hidden" id="black" name="color" type="checkbox" >
-                <label for="black" class="counter__label_checkbox">Черный</label>
-
-                <input class="counter__input_checkbox hidden" id="white" name="color" type="checkbox" >
-                <label for="white" class="counter__label_checkbox">Белый</label>
-
-                <input class="counter__input_checkbox hidden" id="blue" name="color" type="checkbox" >
-                <label for="blue" class="counter__label_checkbox">Синий</label>
-
-                <input class="counter__input_checkbox hidden" id="red" name="color" type="checkbox" >
-                <label for="red" class="counter__label_checkbox">Красный</label>
-
-                <input class="counter__input_checkbox hidden" id="pink" name="color" type="checkbox" >
-                <label for="pink" class="counter__label_checkbox">Розовый</label>
-
-              </fieldset>
-              <fieldset class="counter__fieldset_bottom">
-                <legend>Bluetooth</legend>
-
-                <input class="counter__radio hidden" id="yes" name="bluetooth" type="radio" >
-                <label for="yes" class="counter__label_radio">Есть</label>
-
-                <input class="counter__radio hidden" id="no" name="bluetooth" type="radio" >
-                <label for="no" class="counter__label_radio">Нет</label>
-
-              </fieldset>
-              <button type="button" class="counter__button button">Показать</button>
-            </form>
-          </div>
-          <div class="counter__prduct">
-            <div class="counter__sort">
-              <p>Сортировка:</p>
-              <button type="button" class="counter__type" active>По цене</button>
-              <button type="button" class="counter__type">По типу</button>
-              <button type="button" class="counter__type">По популярности</button>
+          <div class="counter__top">
+            <div class="counter__filter">
+              <span class="filter_span">Фильтр:</span>
             </div>
-            <button type="button" class="counter__arrow arrow_up">
-              <svg class="counter__arrow__svg" x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10"><polyline points="5.5,10 0,0 11,0 "/></svg>
-            </button>
-            <button type="button" class="counter__arrow arrow_down">
-              <svg class="counter__arrow__svg" x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10"><polyline points="5.5,10 0,0 11,0 "/></svg>
-            </button>
-          </div>
-          <div class="counter__gallary">
-            <ul class="counter__list">
-              <li class="counter__item">
-                <a href="#" class="counter__link">
-                <div class="counter__link_inner">
-                  <img src="img/item-1.jpg" alt="Любительская селфи-палка" class="counter__img" width="360" height="380">                  
-                  <button type="button" class="button to_cart">В корзину</button>
-                  <button type="button" class="compared">Добавить к сравнению</button>
+            <div class="counter__prduct">
+              <div class="counter__sort">
+                <p>Сортировка:</p>
+                <div class="counter__sort_inner">
+                  <button type="button" class="counter__type" active>По цене</button>
+                  <button type="button" class="counter__type">По типу</button>
+                  <button type="button" class="counter__type">По популярности</button>
                 </div>
-                </a>
-                <div class="counter__name">
-                  <a href="#" class="counter__link_name">Любительская селфи-палка</a>
-                  <p class="counter__coast">500 руб.</p>
-                </div>
-              </li>
-              <li class="counter__item">
-                <a href="#" class="counter__link">
-                <div class="counter__link_inner">
-                  <img src="img/item-2.jpg" alt="Профессиональная селфи-палка" class="counter__img" width="360" height="380">                  
-                </div>
-                </a>
-                <div class="counter__name">
-                  <a href="#" class="counter__link_name">Профессиональная селфи-палка</a>
-                  <p class="counter__coast">1 500 руб.</p>
-                </div>
-              </li>
-              <li class="counter__item">
-                <a href="#" class="counter__link">
-                <div class="counter__link_inner">
-                  <img src="img/item-3.jpg" alt="Непотопляемая селфи-палка" class="counter__img" width="360" height="380">                  
-                </div>
-                </a>
-                <div class="counter__name">
-                  <a href="#" class="counter__link_name">Непотопляемая селфи-палка</a>
-                  <p class="counter__coast">2 500 руб.</p>
-                </div>
-              </li>
-              <li class="counter__item">
-                <a href="#" class="counter__link">
-                <div class="counter__link_inner">
-                  <img src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»" class="counter__img" width="360" height="380">                  
-                </div>
-                </a>
-                <div class="counter__name">
-                  <a href="#" class="counter__link_name">Селфи-палка «Следуй за мной»</a>
-                  <p class="counter__coast">4 900 руб.</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="counter__pagination">
-            <a href="#" class="counter__pagination_edge">Назад</a>
-            <div class="counter__pagination_inner">
-              <a href="#" class="counter__pagination_item">1</a>
-              <a href="#" class="counter__pagination_item">2</a>
-              <a href="#" class="counter__pagination_item">3</a>
+              </div>
+              <div class="counter__arrow_wrapper">
+                <button type="button" class="counter__arrow arrow_up">
+                  <svg class="counter__arrow__svg" x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10"><polyline points="5.5,10 0,0 11,0 "/></svg>
+                </button>
+                <button type="button" class="counter__arrow arrow_down">
+                  <svg class="counter__arrow__svg" x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10"><polyline points="5.5,10 0,0 11,0 "/></svg>
+                </button>
+              </div>
             </div>
-            <a href="#" class="counter__pagination_edge">Вперед</a>
+          </div>
+
+
+          <div class="counter_bottom">
+            <div class="counter__form_wrapper">
+              <form class="counter__form" action="https://echo.htmlacademy.ru" method="get">
+                <div class="counter__fieldset_first_wrapper">
+                  <fieldset class="counter__fieldset_first">
+                    <legend class="filters_legend">Стоимость</legend>
+                  </fieldset>
+                </div>
+                <div class="counter__fieldset_second_wrapper">
+                <fieldset class="counter__fieldset_second">
+                    <legend class="filters_legend">Цвет</legend>
+                    <p class="counter__input_checkbox_wrapper">
+                      <input class="counter__input_checkbox hidden" id="black" name="color" type="checkbox" >
+                      <label for="black" class="counter__label_checkbox">Черный</label>
+                    </p>
+                    <p class="counter__input_chekbox_wrapper">
+                      <input class="counter__input_checkbox hidden" id="white" name="color" type="checkbox" >
+                      <label for="white" class="counter__label_checkbox">Белый</label>
+                    </p>
+                    <p class="counter__input_chekbox_wrapper">
+                      <input class="counter__input_checkbox hidden" id="blue" name="color" type="checkbox" >
+                      <label for="blue" class="counter__label_checkbox">Синий</label>
+                    </p>
+                    <p class="counter__input_chekbox_wrapper">
+                      <input class="counter__input_checkbox hidden" id="red" name="color" type="checkbox" >
+                      <label for="red" class="counter__label_checkbox">Красный</label>
+                    </p>
+                    <p class="counter__input_chekbox_wrapper">
+                      <input class="counter__input_checkbox hidden" id="pink" name="color" type="checkbox" >
+                      <label for="pink" class="counter__label_checkbox">Розовый</label>
+                    </p>
+
+                  </fieldset>
+                </div>
+                <div class="counter__fieldset_third_wrapper">
+                  <fieldset class="counter__fieldset_third">
+                      <legend>Bluetooth</legend>
+                      <p class="counter__radio_wrapper">
+                        <input class="counter__radio hidden" id="yes" name="bluetooth" type="radio" >
+                        <label for="yes" class="counter__label_radio">Есть</label>
+                      </p>
+                      <p class="counter__radio_wrapper">
+                        <input class="counter__radio hidden" id="no" name="bluetooth" type="radio" >
+                        <label for="no" class="counter__label_radio">Нет</label>
+                      </p>
+  
+                  </fieldset>
+                </div>
+                <button type="button" class="counter__button button">Показать</button>
+              </form>
+            </div>
+          
+            <div class="counter__gallary">
+              <ul class="counter__list">
+                <li class="counter__item">
+                  <a href="#" class="counter__link">
+                    <div class="counter__link_inner">
+                      <img src="img/item-1.jpg" alt="Любительская селфи-палка" class="counter__img" width="360" height="380">                  
+                      <button type="button" class="button to_cart hidden">В корзину</button>
+                      <button type="button" class="compared hidden">Добавить к сравнению</button>
+                    </div>
+                  </a>
+                  <div class="counter__name">
+                    <a href="#" class="counter__link_name">Любительская селфи-палка</a>
+                    <p class="counter__coast">500 руб.</p>
+                  </div>
+                </li>
+                <li class="counter__item">
+                  <a href="#" class="counter__link">
+                  <div class="counter__link_inner">
+                    <img src="img/item-2.jpg" alt="Профессиональная селфи-палка" class="counter__img" width="360" height="380">                  
+                  </div>
+                  </a>
+                  <div class="counter__name">
+                    <a href="#" class="counter__link_name">Профессиональная<br> селфи-палка</a>
+                    <p class="counter__coast">1 500 руб.</p>
+                  </div>
+                </li>
+                <li class="counter__item">
+                  <a href="#" class="counter__link">
+                  <div class="counter__link_inner">
+                    <img src="img/item-3.jpg" alt="Непотопляемая селфи-палка" class="counter__img" width="360" height="380">                  
+                  </div>
+                  </a>
+                  <div class="counter__name">
+                    <a href="#" class="counter__link_name">Непотопляемая селфи-палка</a>
+                    <p class="counter__coast">2 500 руб.</p>
+                  </div>
+                </li>
+                <li class="counter__item">
+                  <a href="#" class="counter__link">
+                  <div class="counter__link_inner">
+                    <img src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»" class="counter__img" width="360" height="380">                  
+                  </div>
+                  </a>
+                  <div class="counter__name">
+                    <a href="#" class="counter__link_name">Селфи-палка «Следуй за<br> мной»</a>
+                    <p class="counter__coast">4 900 руб.</p>
+                  </div>
+                </li>
+              </ul>
+              <div class="counter__pagination">
+                <a href="#" class="counter__pagination_edge">Назад</a>
+                <div class="counter__pagination_inner">
+                  <a href="#" class="counter__pagination_item">1</a>
+                  <a href="#" class="counter__pagination_item">2</a>
+                  <a href="#" class="counter__pagination_item">3</a>
+                </div>
+                <a href="#" class="counter__pagination_edge">Вперед</a>
+              </div>
+            
+            </div>
+
           </div>
         </div>
       </section>        
     </main>
-    <footer class="main_footer">
-      <div class="footer_weapper">
+    <footer class="main_footer catalog_footer">
+      <div class="footer_wrapper">
         <div class="footer_top">
-          <svg class="logo_svg_footer" width="164" height="36" viewBox="0 0 164 36"><defs><style>.logo {font-size: 26.459px;font-family: Gilroy;font-weight: 800;}</style></defs><text id="logo" class="logo" transform="translate(-2.319 34.511) scale(1.827 1.814)">DEVICE</text></svg>
+          <svg class="logo_svg_footer" width="164" height="36" viewBox="0 0 164 36"><defs><style>.logo {font-size: 26.459px;font-family: Gilroy;font-weight: 800;}</style></defs><text class="logo" transform="translate(-2.319 34.511) scale(1.827 1.814)">DEVICE</text></svg>
           <ul class="footer_top_right_list">
             <li class="footer_top_right__item">
               <a href="#" class="footer_top_right__link">
                 <span class="footer_top_right__icon">
-                  <svg class="main_footer_icon" x="0px" y="0px" width="13px" height="12px" viewBox="0 0 13 12"><path d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z"/></svg>
+                  <svg class="main_footer_icon" x="0px" y="0px" width="16px" height="12px" viewBox="0 0 13 12"><path d="M0.032,12h12.937c-0.163-2.643-2.074-4.837-4.671-5.543C9.306,5.846,9.985,4.75,9.985,3.485C9.985,1.561,8.425,0,6.5,0S3.015,1.561,3.015,3.485c0,1.264,0.68,2.361,1.688,2.972C2.106,7.163,0.194,9.357,0.032,12z"/></svg>
                 </span>
-                Выйти
+                Войти
               </a>
             </li>
             <li class="footer_top_right__item">
@@ -254,13 +283,13 @@
           </ul>
         </div>
         <div class="footer_middel">
-          <adress class="footer_middle__adress">г. Москва, ул. Строителей, 15</adress>
-          <div class="footer-middle__menu">
-            <a href="" class="footer_middle__link">Доставка</a>
-            <a href="" class="footer_middle__link">Гарантия</a>
-            <a href="" class="footer_middle__link">Контакты</a>
+          <p class="footer_middle__adress">г. Москва, ул. Строителей, 15</p>
+          <div class="footer_middle__menu">
+            <a href="#" class="footer_middle__link">Доставка</a>
+            <a href="#" class="footer_middle__link">Гарантия</a>
+            <a href="#" class="footer_middle__link">Контакты</a>
           </div>
-          <adress class="footer_middle__adress">Тел.: +7 (495) 495-95-95</adress>
+          <p class="footer_middle__adress">Тел.: +7 (495) 495-95-95</p>
         </div>
         <div class="footer_bottom">
           <span class="footer_bottom_line"></span>
